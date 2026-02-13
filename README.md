@@ -1,4 +1,4 @@
-# paper-specs - Collection Of Tablet Specifications
+# slate-geometry - Collection Of Tablet Specifications
 
 This package provides information for tablets (e.g. Remarkable).
 The information can be used to set up the page format.
@@ -13,7 +13,7 @@ Use the `setup()` function to set the page size directly.
 This changes the margin at the `top` to match the toolbar size.
 
 ```typst
-#import "@preview/paper-specs:0.1.0": setup
+#import "@preview/slate-geometry:0.1.0": setup
 
 #show: setup.with(
   "remarkable",
@@ -25,7 +25,7 @@ This changes the margin at the `top` to match the toolbar size.
 But it is also possible to retrieve the values directly:
 
 ```typst
-#import "@preview/paper-specs:0.1.0": get-size
+#import "@preview/slate-geometry:0.1.0": get-size
 
 #let (width, height) = get-size("remarkable", "paper-pro-move")
 #set page(width: width, height: height)
@@ -40,7 +40,7 @@ This can be used to prevent the area from being used so nothing is hidden behind
 it.
 
 ```typst
-#import "@preview/paper-specs:0.1.0": get-toolbar
+#import "@preview/slate-geometry:0.1.0": get-toolbar
 
 #let bar-width = get-toolbar("remarkable", "2")
 ```

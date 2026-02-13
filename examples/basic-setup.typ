@@ -1,4 +1,4 @@
-#import "@local/paper-specs:0.1.0": *
+#import "@preview/slate-geometry:0.1.0": *
 
 // Setup with the default values. Auto margin and no toolbar margin.
 #show: setup.with(
